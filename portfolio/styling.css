@@ -1,0 +1,526 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+#container {
+  background-color: #4c5364;
+}
+
+#pageTitle {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  background-color: #fafafa;
+  line-height: 80px;
+  font-size: 15px;
+  z-index: 1000;
+}
+
+#pageTitle h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+a:active {
+  color: blue;
+}
+
+#menu li a:hover {
+  font-size: 18px;
+  color: red;
+}
+#menu {
+  background-color: #ab3b61;
+
+  position: relative;
+}
+
+#menu ul {
+  display: relative;
+  margin: 0 auto;
+  float: left;
+  width: 100%;
+
+  background-color: #ab3b61;
+  list-style: none;
+
+  /* flex-direction: column; */
+}
+
+@media (min-width: 768px) {
+  #menu ul {
+    background-color: #ab3b61;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0px;
+
+    display: relative;
+    margin: 0 auto;
+    float: left;
+  }
+}
+
+#menu > ul > li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+
+#menu ul li a {
+  border-right: 1px solid #fff;
+  padding: 10px 40px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #222;
+  text-decoration: none;
+  display: inline-block;
+  background: #ab3b61;
+}
+
+#menu li a {
+  font-size: 13px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0;
+  text-align: left;
+}
+
+ul li:hover > a {
+  background: #ab3b61;
+  color: #fff;
+  opacity: 0.9;
+}
+
+ul li:hover > ul {
+  visibility: visible;
+}
+
+ul ul,
+ul ul li ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 180px;
+}
+
+ul ul {
+  top: 39px;
+  left: 0;
+}
+
+ul ul li ul {
+  top: 0;
+  left: 181px;
+}
+
+ul ul li a {
+  background-color: aqua;
+  padding: 7px 15px;
+  color: #fff;
+  text-shadow: 0 1px 1px #111;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  width: 150px;
+  border-bottom: 1px dotted #fff;
+}
+
+ul ul ul li a {
+  background-color: #ab3b61;
+}
+
+.gcse-search {
+  float: right;
+}
+
+.gcse-search {
+  padding-top: 0;
+  display: inline-table;
+}
+
+#welcome h3 {
+  margin: 0;
+  padding-top: 80px;
+  letter-spacing: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 25px;
+}
+
+#introduction {
+  display: flex;
+}
+
+#firstParagraph ol li {
+  text-align: left;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+}
+
+#photo {
+  position: relative;
+}
+
+#photo img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #photo img {
+    padding: 10px 35px;
+    margin: 35px 25px;
+    height: 500px;
+    width: 350px;
+    border-radius: 50%;
+  }
+}
+
+#photoTwo {
+  display: flex;
+  background-color: #4c5364;
+  position: relative;
+}
+
+#photoTwo img {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+#photoTwoMainPics {
+  height: 400px;
+  width: 550px;
+}
+
+#machineIcon {
+  position: absolute;
+  right: 179px;
+  top: 260px;
+  height: 130px;
+  width: 142px;
+  z-index: 1111111;
+}
+
+#cyberIcon {
+  position: absolute;
+  left: 200px;
+  top: 257px;
+  height: 130px;
+  width: 145px;
+  z-index: 1111111;
+}
+
+#introduction h3,
+h4,
+h5 {
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+}
+
+#midParagraph {
+  background-color: #4b6777;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#midParagraph h3 {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+#midParagraph p {
+  line-height: 3em;
+  letter-spacing: 2px;
+  text-align: left;
+  padding: 15px;
+  margin: 10px;
+}
+
+#firstParagraph {
+  background-color: #4b6777;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+  display: block;
+}
+
+#introduction p {
+  padding: 15px;
+  margin: 10px;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 3em;
+}
+
+#lastPicture {
+  background: #4c5364;
+  height: 430px;
+  width: 550px;
+  border-radius: 50%;
+  padding: 35px;
+}
+
+#lastParagraph {
+  background-color: #4c5364;
+  text-align: left;
+  height: 570px;
+}
+
+#lastParagraph h3 {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 20px;
+}
+
+#lastParagraph p {
+  line-height: 3em;
+  letter-spacing: 2px;
+  text-align: left;
+  padding: 15px 35px;
+  margin: 0;
+}
+
+#last figcaption {
+  padding-left: 200px;
+}
+
+#lastPictureDiv {
+  float: right;
+  position: relative;
+}
+
+footer {
+  background-color: #ab3b61;
+  letter-spacing: 2px;
+  line-height: 3em;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+
+/* About Me Page */
+
+#nepalMap {
+  height: 500px;
+  border-radius: 50%;
+}
+
+#nepalText p {
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-decoration: blanchedalmond;
+  font-size: 15px;
+  line-height: 2em;
+}
+
+#nepalLocationStatement {
+  text-align: center;
+}
+
+#achievements {
+  background-color: #4c5364;
+}
+
+#achievements h3 {
+  text-align: center;
+  letter-spacing: 0.2em;
+  line-height: 30px;
+}
+
+#achievementsBoxes {
+  display: flex;
+  flex-direction: column;
+}
+
+#achievementsBoxes > div {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+}
+
+#achievements img {
+  height: 400px;
+  width: 550px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+#midParagraph ul {
+  line-height: 75px;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+}
+
+#aboutMeEnd {
+  background-color: #4c5364;
+  text-align: left;
+}
+
+#aboutMeEnd p {
+  padding: 9px;
+  margin: 0;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+#photo:hover .overlay {
+  opacity: 1;
+}
+
+/* ContactMe page */
+
+#socialMedias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+img.social {
+  height: 45px;
+  width: 45px;
+  background-color: white;
+}
+
+/* resume */
+#referenceDiv p {
+  margin: 0;
+}
+
+/* DisplayPage */
+.displayImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.displayImages img {
+  width: 310px;
+  height: 220px;
+}
+
+#resumeWelcome {
+  background-color: ghostwhite;
+}
+
+#resumeWelcome h3 {
+  margin: 0;
+  padding-top: 80px;
+  letter-spacing: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 25px;
+}
+
+#resumeDiv {
+  background-color: ghostwhite;
+}
+
+#resumeDiv > h2 {
+  margin: 0;
+}
+
+#resumeDiv h2 {
+  padding: 30px;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+}
+
+#resumeDiv p {
+  padding: 30px;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+}
+
+#resumeDiv ul li {
+  letter-spacing: 0.1em;
+  line-height: 25px;
+}
+
+#referenceBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#referenceBox p {
+  padding-left: 150px;
+}
+
+.displayImages img {
+  padding: 30px 0;
+}
+
+#contactOptions h4 {
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+}
